@@ -35,8 +35,9 @@ skill: “Improve this setup guide for a first-time reader. Preserve its behavio
 literal names and scope.” Inspect the resulting guide rather than matching an
 exact rewrite. The reader should learn whether the optional step applies before
 acting, understand the unfamiliar term before using it, and retain the distinction
-between the workspace and the archive. The warning, command and UI label must
-survive. An agent may leave familiar terms unexplained and use different wording.
+between the workspace and the archive. The warning must appear before the restore
+command, and the command and UI label must survive. An agent may leave familiar
+terms unexplained and use different wording.
 
 Fixture: [plain instructions](fixtures/plain-instructions/README.md). This is a
 proposed probe; it has not been executed as an independent behavioral trial.
