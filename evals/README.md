@@ -26,6 +26,20 @@ Execution records state their inputs, interventions and validation limits:
 | [Selection and quick start](selection-and-quick-start.md) | Unnamed-skill host selection checks and an executed one-off CLI trial |
 | [Foveacast application](foveacast-application.md) | Fresh real-project application, parent source review and supported-alternative check |
 | [Elements of Style trials](elements-of-style-trials.md) | Draft-skill applications to Pinment and Blocklate, with preserved constraints and verification limits |
+| [Plain-instruction integration review](plain-instructions-review.md) | Source comparison and an unexecuted proposed behavioral probe |
+
+## Proposed plain-instruction probe
+
+In a disposable copy of the fixture below, ask an agent with the documentation
+skill: “Improve this setup guide for a first-time reader. Preserve its behavior,
+literal names and scope.” Inspect the resulting guide rather than matching an
+exact rewrite. The reader should learn whether the optional step applies before
+acting, understand the unfamiliar term before using it, and retain the distinction
+between the workspace and the archive. The warning, command and UI label must
+survive. An agent may leave familiar terms unexplained and use different wording.
+
+Fixture: [plain instructions](fixtures/plain-instructions/README.md). This is a
+proposed probe; it has not been executed as an independent behavioral trial.
 
 ## Skill selection
 

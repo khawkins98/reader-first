@@ -60,6 +60,10 @@ wording:
   Preserve useful emphasis, comparisons and the project's voice.
 - Keep conditions and qualifiers beside the actions or claims they govern, and
   make pronoun references clear. Reordering must preserve who does what and when.
+- Put a condition before an action when the reader needs it to decide whether to
+  act. Use terms consistently for the same concept, while preserving distinctions
+  and literal product names. Explain unfamiliar terms where the intended reader
+  first needs them; do not define familiar names just to satisfy a rule.
 - Give comparable steps and options a consistent grammatical form so readers can
   compare them. Preserve literal UI labels and code.
 - Preserve a clear product pitch unless its likely reading would lead the intended
