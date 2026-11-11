@@ -14,6 +14,7 @@ and a way to study the source methods, not a requirement to fetch and execute th
 | Moved detail is difficult to find | Information scent: Raluca Budiu / Nielsen Norman Group | Check whether the link and its context predict the destination's answer |
 | A README loses its intended audience | Audience: Softaworks' README guidance | Restore a clear entrance and working first success |
 | Correct information is hard to read | Prose: Softaworks' writing guidance and William Strunk Jr.'s composition principles | Edit wording, clause placement and comparable steps after deciding what belongs |
+| Instructions assume knowledge or hide a condition | Plain technical English: SimpleEnglish | Place decision conditions before actions and clarify terms for the intended reader |
 | Prose feels formulaic or overworked | Voice and rhythm: Siqi Chen's Humanizer | Apply a compact, context-sensitive prose pass that preserves meaning |
 | A diff needs a restrained editorial review | LangChain's docs-review and CI guidance | Find regressions, preserve meaning during cuts and allow no findings |
 | A code change may affect documentation | Vercel / Next.js's update-docs | Trace reader-visible behavior to affected tasks and shared-content consumers |
@@ -74,6 +75,17 @@ Strunk's text reviewed 2026-11-07.
 - Reviewed revision: `3027f20f3181758385a1bb8c022d4041dfb4de84`.
 - Upstream license: [MIT](https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/LICENSE).
 - Use: independently written guidance informed by this perspective. Apply selective copyediting after content decisions; preserve precise technical meaning.
+
+### Plain technical instructions
+
+- Credit: **AminBlg and SimpleEnglish contributors**.
+- Source: [SimpleEnglish skill](https://github.com/AminBlg/SimpleEnglish/blob/300432a9e4c473229a7049ab61b8ca2522d9214c/skills/simple-english/SKILL.md), version 2.1.2; reviewed 2026-11-11.
+- Reviewed revision: `300432a9e4c473229a7049ab61b8ca2522d9214c`.
+- Rights: the skill declares MIT; its [repository license](https://github.com/AminBlg/SimpleEnglish/blob/300432a9e4c473229a7049ab61b8ca2522d9214c/LICENSE) also states MIT.
+- Use: conceptual inspiration, independently written. Conditions before actions,
+  consistent terminology and audience-appropriate explanations supplement the
+  existing prose pass. Fixed sentence limits, vocabulary substitutions and STE
+  compliance claims are not adopted. No source wording or examples are included.
 
 ### Change-aware editorial review
 

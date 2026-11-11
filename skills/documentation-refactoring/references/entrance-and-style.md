@@ -48,7 +48,8 @@ wording:
 - Make the smallest edit that resolves the reader's problem. If one format,
   label or clause is wrong, correct that part before rewriting a working paragraph.
   Preserve its surrounding voice and meaning.
-- Lead with the result or action. Use concrete nouns, active verbs and direct
+- Lead with the result or action, except when a condition must come first to
+  help the reader decide whether to act. Use concrete nouns, active verbs and direct
   instructions rather than noun-heavy phrases. Passive voice is useful when the
   actor is unknown or the result deserves the focus. Cut staged openings, narration
   about what the text will explain, and closing lines that merely repeat the point.
@@ -60,6 +61,12 @@ wording:
   Preserve useful emphasis, comparisons and the project's voice.
 - Keep conditions and qualifiers beside the actions or claims they govern, and
   make pronoun references clear. Reordering must preserve who does what and when.
+- Put a condition before an action when the reader needs it to decide whether to
+  act. Use terms consistently for the same concept, while preserving distinctions
+  and literal product names. Explain unfamiliar terms where the intended reader
+  first needs them when project evidence supports an explanation. Otherwise link
+  to a maintained explanation or report the uncertainty; do not invent a definition.
+  Do not define familiar names just to satisfy a rule.
 - Give comparable steps and options a consistent grammatical form so readers can
   compare them. Preserve literal UI labels and code.
 - Preserve a clear product pitch unless its likely reading would lead the intended
@@ -80,7 +87,7 @@ wording:
   or facts to make a passage sound personal. Judge phrases in context rather than
   maintaining a banned-word list.
 - Use descriptive links and the UI/CLI's actual names. Put actions in order,
-  prerequisites before commands and warnings beside the affected action.
+  prerequisites and warnings needed for a decision before the affected action.
 - Use headings for reader tasks, lists for parallel choices/steps, and tables for
   genuine comparisons or lookup. Remove decorative separators, excessive bold
   and one-sentence sections when they interrupt reading. Do not impose fixed
