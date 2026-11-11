@@ -44,7 +44,7 @@ proposed probe; it has not been executed as an independent behavioral trial.
 
 ## Skill selection
 
-Scenarios A–H explicitly name their skill; they test execution after selection.
+Scenarios A–I explicitly name their skill; they test execution after selection.
 Before widening a description, also try ordinary requests without skill names
 in a host with both skills available. Include a nearby unrelated task and inspect
 which skill files the agent actually reads. The [initial selection checks](selection-and-quick-start.md)

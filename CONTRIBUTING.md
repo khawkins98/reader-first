@@ -54,8 +54,9 @@ methods or framing the project as a replacement born from others' inadequacy.
   Preserve required notices and change disclosures. Unknown licensing means link
   and credit only until permission is established, not silently assume MIT.
 - Place the original-project license, provenance and required upstream notices
-  inside the installable skill that uses the material, with a root index for repository readers. Check that installation
-  carries them. A root-only credit file does not travel with a selected skill.
+  inside the installable skill that uses the material, with a root index for
+  repository readers. Check that installation carries them. A root-only credit
+  file does not travel with a selected skill.
 - Do not relabel upstream work as our original text or assign it our licences.
   The no-unsolicited-AI-trailer preference never removes author credit, copyright
   or license notices.
