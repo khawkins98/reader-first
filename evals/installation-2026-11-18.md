@@ -68,3 +68,33 @@ and directory symlinks were refused without altering their contents or targets.
 Missing target directories returned failure and wrote no installation in the
 caller's directory. No personal installations or model calls were needed for
 these command checks. No additional correctness blocker was identified.
+
+## Personal installation receipt
+
+Later on 18 November 2026, the user authorized personal installations. This
+extends the earlier disposable-project checks, whose conditions remain above.
+Source: [repository](https://github.com/khawkins98/reader-first), commit
+`3600a30546bf90d38e56a1c90d629b2151039faa`.
+
+| Skill | Codex personal copy | Claude Code personal copy | Files verified per copy |
+| --- | --- | --- | --- |
+| `documentation-refactoring` | `~/.agents/skills/documentation-refactoring` | `~/.claude/skills/documentation-refactoring` | 9 |
+| `contribution-conventions` | `~/.agents/skills/contribution-conventions` | `~/.claude/skills/contribution-conventions` | 8 |
+
+The Codex installer fetched that pinned revision; its complete packages were
+copied to Claude Code after checking for existing destinations. Nothing was
+overwritten. Every installed relative path and file SHA-256 matched the Git
+commit, including references and notices, with no extra or missing files. The
+README pin commands also selected the expected hashes in separate clean clones
+with spaces in their paths.
+
+Codex 0.167.0, using normal user configuration from an empty disposable Git
+project, listed the installed personal paths as enabled at user scope. No legacy
+personal Codex copy had these names. This verifies personal discovery; the earlier
+successful task used project-scoped copies.
+
+Claude's personal copies are byte-verified. Personal startup and task execution
+were not rerun. Earlier project-scoped discovery succeeded, while the task attempt
+encountered the account's weekly usage limit. Execution remains unverified.
+This documentation follow-up changed no installed packages, skill bodies or
+credentials and made no new model calls.
