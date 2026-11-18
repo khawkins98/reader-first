@@ -70,18 +70,19 @@ only for the optional Skills CLI route.
    repeat the copy for both.
 
    ```sh
-   cd /absolute/path/to/target-repository
    reader_first_checkout="/absolute/path/to/reader-first"
    skill_name="documentation-refactoring"
    skills_dir=".agents/skills"
-   mkdir -p "$skills_dir"
-   test ! -e "$skills_dir/$skill_name" &&
+   cd "/absolute/path/to/target-repository" &&
+     mkdir -p "$skills_dir" &&
+     test ! -e "$skills_dir/$skill_name" &&
      test ! -L "$skills_dir/$skill_name" &&
      cp -R "$reader_first_checkout/skills/$skill_name" "$skills_dir/$skill_name"
    ```
 
-   The copy stops if that name already exists. Inspect the existing installation
-   before replacing it. Copy the entire selected folder, including `references`,
+   The copy stops if the target directory is missing or that name already exists.
+   Inspect the existing installation before replacing it. Copy the entire selected
+   folder, including `references`,
    licence texts and notices; copying only `SKILL.md` loses required material.
 
 ### Verify and run a first task

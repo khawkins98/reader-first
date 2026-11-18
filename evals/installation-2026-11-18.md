@@ -51,3 +51,20 @@ checks used an authenticated checkout of its private repository. These are local
 installation smoke checks, not a general effectiveness or human usability study.
 Raw CLI output and synthetic workspaces remain in untracked local test storage;
 no credentials or model transcript are distributed in this repository.
+
+## Red-team follow-up
+
+A fresh reviewer reproduced a failed-target-directory case in the original copy
+example: after `cd` failed, the remaining commands installed into the caller's
+current directory and returned success. The example now chains directory change,
+directory creation, destination guards and copy, and quotes the target path.
+A failed directory change stops installation. The original positive checks above
+did not cover this case; this follow-up records the added coverage.
+
+The revised README blocks were executed for all three companion packages in both
+agent directories, using disposable source and target paths containing spaces.
+Complete package bytes matched; repeated copies, existing files, broken symlinks
+and directory symlinks were refused without altering their contents or targets.
+Missing target directories returned failure and wrote no installation in the
+caller's directory. No personal installations or model calls were needed for
+these command checks. No additional correctness blocker was identified.
