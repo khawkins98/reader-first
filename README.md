@@ -85,6 +85,25 @@ only for the optional Skills CLI route.
    folder, including `references`,
    licence texts and notices; copying only `SKILL.md` loses required material.
 
+### Pin and record the installed version
+
+For a reproducible installation, select a reviewed commit in a separate, clean
+tool checkout before copying. Replace the path and revision below; the revision
+is the full commit hash you have reviewed.
+
+```sh
+reviewed_revision="replace-with-reviewed-full-commit"
+git -C "/absolute/path/to/reader-first" checkout --detach "$reviewed_revision" &&
+  git -C "/absolute/path/to/reader-first" rev-parse HEAD
+```
+
+Keep a local installation receipt with the repository URL, printed commit hash,
+skill name, destination, scope, agent version and verification date. Note any local
+package edits or extra files; a commit alone identifies only the tracked source.
+Record discovery and task execution as separate results. The
+[dated installation record](evals/installation-2026-11-18.md#personal-installation-receipt)
+shows what was verified for our personal copies.
+
 ### Verify and run a first task
 
 Start a new agent session in the target repository after installation. In Claude
@@ -93,6 +112,12 @@ select it. If it is missing, check the scope, folder name and
 `<skills directory>/<skill name>/SKILL.md`, then restart the session. If another
 copy has the same name, inspect the project and personal locations before
 choosing which to keep.
+
+Check the loaded `SKILL.md` path against the destination and scope you selected,
+using the host's skill details where available. Check its enabled state if the
+host exposes that setting. In the first task, inspect which skill and supporting
+files actually load. If a model, account or tool limit prevents a task run, record
+execution as unverified even when discovery succeeded.
 
 Send one of these complete requests. The first reviews a README; the second
 prepares contribution text for an existing diff.
@@ -109,11 +134,12 @@ agent still needs access to the files and tools required by your task.
 
 ### Update or remove an installation
 
-For a manual installation, update your Reader First checkout with `git pull`
-from that checkout. Back up any local edits in the installed skill, remove only
-that selected skill folder from the location you chose, then repeat the complete
-folder copy. Review the new version before adopting it. Updating the checkout
-alone does not update a copied installation.
+For a pinned detached checkout, select the next reviewed commit explicitly. For a
+branch checkout, review upstream changes and update it, for example with
+`git pull --ff-only` from that checkout. Back up local edits in the installed
+copy, remove only the selected skill folder, then repeat the complete copy.
+Updating the checkout alone does not update a copied installation. Update the
+receipt after copying and rechecking discovery and task execution.
 
 To uninstall, remove only the selected skill folder from that project or personal
 skills directory. Leave unrelated skills in place and start a new agent session.
