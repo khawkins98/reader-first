@@ -119,13 +119,19 @@ host exposes that setting. In the first task, inspect which skill and supporting
 files actually load. If a model, account or tool limit prevents a task run, record
 execution as unverified even when discovery succeeded.
 
-Send one of these complete requests. The first reviews a README; the second
-prepares contribution text for an existing diff.
+Each prompt includes both invocations. Keep the leading `/skill-name` in Claude
+Code or keep `$skill-name` in Codex. Add your task details to the same message.
 
-| Task | Claude Code request | Codex request |
-| --- | --- | --- |
-| Improve a README | `/documentation-refactoring Improve README.md for a first-time reader. Keep setup working, preserve required technical detail and verify the reader paths. Report changes and checks.` | `$documentation-refactoring Improve README.md for a first-time reader. Keep setup working, preserve required technical detail and verify the reader paths. Report changes and checks.` |
-| Prepare a contribution | `/contribution-conventions Prepare a PR title and description for the current diff, following this repository's contribution rules. Report the checks run. Do not commit or publish.` | `$contribution-conventions Prepare a PR title and description for the current diff, following this repository's contribution rules. Report the checks run. Do not commit or publish.` |
+**Improve documentation**
+
+> `/documentation-refactoring` `$documentation-refactoring` Improve the docs I pointed to. Make the
+> reader’s next step clear, keep the technical details they need, and verify the
+> instructions.
+
+**Prepare a PR**
+
+> `/contribution-conventions` `$contribution-conventions` Draft a title and description for the current
+> diff. Follow the repo’s rules and report which checks ran.
 
 Check that the agent loads the selected skill before assessing the result. Both
 skills are independently useful and self-contained; each linked expert map
@@ -179,6 +185,13 @@ npx skills@1.9.0 use khawkins98/reader-first@documentation-refactoring
 This prepares temporary skill files and prints a prompt for a local agent. See
 the [command reference](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-use)
 for options to launch an agent directly.
+
+## Companion project
+
+Journey First helps agents review user flows, test tasks in a live app, and
+verify fixes. Access to the private repository is required.
+
+https://github.com/khawkins98/journey-first
 
 ## Develop the skills
 
