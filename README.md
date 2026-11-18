@@ -119,19 +119,22 @@ host exposes that setting. In the first task, inspect which skill and supporting
 files actually load. If a model, account or tool limit prevents a task run, record
 execution as unverified even when discovery succeeded.
 
-Each prompt includes both invocations. Keep the leading `/skill-name` in Claude
-Code or keep `$skill-name` in Codex. Add your task details to the same message.
+Copy a prompt and delete the invocation for the other agent. In Claude Code,
+keep `/skill-name` at the very start of the message and add your task details
+after the prompt. In Codex, keep `$skill-name` and add details before or after
+the prompt.
 
 **Improve documentation**
 
-> `/documentation-refactoring` `$documentation-refactoring` Improve the docs I pointed to. Make the
-> reader’s next step clear, keep the technical details they need, and verify the
-> instructions.
+```text
+/documentation-refactoring $documentation-refactoring Improve the documentation I specify, or start with README.md. Make the reader’s next step clear, keep the technical details they need, and verify the instructions.
+```
 
 **Prepare a PR**
 
-> `/contribution-conventions` `$contribution-conventions` Draft a title and description for the current
-> diff. Follow the repo’s rules and report which checks ran.
+```text
+/contribution-conventions $contribution-conventions Draft a title and description for the current diff. Follow the repo’s rules and report which checks ran. Return the draft in chat.
+```
 
 Check that the agent loads the selected skill before assessing the result. Both
 skills are independently useful and self-contained; each linked expert map
