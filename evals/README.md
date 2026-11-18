@@ -27,6 +27,7 @@ Execution records state their inputs, interventions and validation limits:
 | [Foveacast application](foveacast-application.md) | Fresh real-project application, parent source review and supported-alternative check |
 | [Elements of Style trials](elements-of-style-trials.md) | Draft-skill applications to Pinment and Blocklate, with preserved constraints and verification limits |
 | [Plain-instruction integration review](plain-instructions-review.md) | Source comparison and an unexecuted proposed behavioral probe |
+| [Installed-skill checks](installation-2026-11-18.md) | Native copies and discovery, Codex invocation, CLI lifecycle checks and Claude usage-limit boundary |
 
 ## Proposed plain-instruction probe
 
